@@ -84,8 +84,8 @@ public class Game2Activity extends AppCompatActivity {
                         else{
                             turnsTaken = 1;
                             laps++;
-                            if (laps <= 10){
-                                counter.setText("Lap: " + laps + "/10");
+                            if (laps <= 5){
+                                counter.setText("Lap: " + laps + "/5");
                                 handler.postDelayed(this, 3000);
                             }
                             else{
