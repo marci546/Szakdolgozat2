@@ -69,7 +69,7 @@ public class Game2Activity extends AppCompatActivity {
         start_bttn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                turnsTaken = 1;
+                turnsTaken = 0;
                 laps = 1;
                 final Handler handler = new Handler();
                 new Handler().postDelayed(new Runnable() {
@@ -82,7 +82,7 @@ public class Game2Activity extends AppCompatActivity {
                             handler.postDelayed(this, 3000);
                         }
                         else{
-                            turnsTaken = 1;
+                            turnsTaken = 0;
                             laps++;
                             if (laps <= 5){
                                 counter.setText("Lap: " + laps + "/5");
