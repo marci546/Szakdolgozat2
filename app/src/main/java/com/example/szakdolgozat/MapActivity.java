@@ -54,7 +54,8 @@ public class MapActivity extends AppCompatActivity {
         ArrayList<String> theList = new ArrayList<>();
         Cursor data = db.getListElements();
 
-        ArrayList<Integer> turnList = new ArrayList<>(Arrays.asList(10, 10, 14, 18, 18, 16, 19, 11, 15, 18, 15, 19, 14, 15, 11, 21));
+        ArrayList<Integer> turnList = new ArrayList<>(Arrays.asList(10, 10, 14, 18, 18, 16, 19, 11, 15, 18, 15, 15, 19, 14, 15, 11, 21));
+
         Cursor data2 = db.getListElements();
 
 
