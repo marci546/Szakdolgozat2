@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MapActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Choose your track: "
+            android:textSize="30dp"
+            android:background="#5a6270"
+            android:textColor="#cf0a0e"
+            android:textStyle="bold"
+            />
+
+        <ListView
+            android:id="@+id/tracks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9aa4ad"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
