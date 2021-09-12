@@ -6,29 +6,46 @@
 
 
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/background"
-            android:orientation="vertical" >
+            android:background="@drawable/menu"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/f1manager"
+                android:layout_marginTop="50dp"
+            />
+
+            <ImageButton
+                android:id="@+id/img_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="200dp"
+                android:background="@android:color/transparent"
+            />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:gravity="center"
-                android:text="F1 Manager \n Tap to Start"
-                android:textColor="#000000"
-                android:textSize="60dp" />
+                android:layout_height="wrap_content"
+                android:text="Készítette: Veres Márton"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:alpha="0.2"
+            />
 
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:alpha="0"
-                android:id="@+id/img_button"
-                />
-
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>

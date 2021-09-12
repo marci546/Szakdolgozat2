@@ -4,33 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameActivity">
+    tools:context=".GameActivity"
+    android:background="@color/white">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical" >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Choose your driver: "
-            android:textSize="30dp"
-            android:background="#5a6270"
-            android:textColor="#cf0a0e"
-            android:textStyle="bold"
-            />
-
         <ListView
             android:id="@+id/drivers"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#9aa4ad"
-            
-            />
-
-
-    </LinearLayout>
+            android:background="@color/white"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="180dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="144px"
+                android:layout_height="match_parent"
+                android:src="@drawable/balrazoko"
+                android:layout_alignParentLeft="true" />
+            <ImageView
+                android:layout_width="144px"
+                android:layout_height="match_parent"
+                android:src="@drawable/jobbrazoko"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/titledrivernew" />
+    </RelativeLayout>
 
 </RelativeLayout>

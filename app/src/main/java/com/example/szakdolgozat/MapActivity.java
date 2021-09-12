@@ -78,6 +78,8 @@ public class MapActivity extends AppCompatActivity {
                 Intent mainscreen = new Intent(MapActivity.this, Game2Activity.class);
                 mainscreen.putExtra("chosenTrack", theList.get(i));
                 mainscreen.putExtra("turnCount", turnList.get(i));
+                Intent intent = getIntent();
+                mainscreen.putExtra("chosenPilot", intent.getStringExtra("chosenPilot"));
                 startActivity(mainscreen);
                 finish();
             }

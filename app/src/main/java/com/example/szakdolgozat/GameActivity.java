@@ -32,7 +32,7 @@ public class GameActivity extends AppCompatActivity {
         vezetok.add("Max Verstappen, Red Bull");
         vezetok.add("Alexander Albon, Red Bull");
         vezetok.add("Lando Norris, McLaren");
-        vezetok.add("Carlos Sainz Jr., McLaren");
+        vezetok.add("Carlos Sainz Jr, McLaren");
         vezetok.add("Daniel Ricciardo, Rebault");
         vezetok.add("Esteban Ocon, Renault");
         vezetok.add("Sebastian Vettel, Ferrari");
@@ -46,7 +46,7 @@ public class GameActivity extends AppCompatActivity {
         vezetok.add("Romain Grosjean, Haas");
         vezetok.add("Kevin Magnussen, Haas");
         vezetok.add("George Russel, Williams");
-        vezetok.add("Nicholas latifi, Williams");
+        vezetok.add("Nicholas Latifi, Williams");
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, vezetok);
 
@@ -57,6 +57,7 @@ public class GameActivity extends AppCompatActivity {
                 Toast.makeText(GameActivity.this, "Choosen driver: " +i+ ". "+vezetok.get(i), Toast.LENGTH_SHORT).show();
 
                 Intent mainscreen = new Intent(GameActivity.this, MapActivity.class);
+                mainscreen.putExtra("chosenPilot", vezetok.get(i));
                 startActivity(mainscreen);
                 finish();
             }
